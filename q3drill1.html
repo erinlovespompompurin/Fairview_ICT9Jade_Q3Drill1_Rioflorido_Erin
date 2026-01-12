@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Drill1</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://images.squarespace-cdn.com/content/v1/586ec16bb3db2b558ebfec60/694329ee-2cd8-4786-9406-77ca00f30b07/math-header.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(3px);
+
+        
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .container {
+            background: #e6e6e6;
+            width: 500px;
+            max-width: 90%;
+            padding: 30px;
+            border: 3px dotted #999;
+            border-radius: 25px;
+            text-align: center;
+        }
+
+
+        .title {
+            background: #f0b08e;
+            padding: 12px;
+            border-radius: 30px;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+
+        button {
+            background: #f7a58a;
+            border: 2px solid #333;
+            border-radius: 20px;
+            padding: 8px 18px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+
+        input {
+            padding: 6px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="fst-italic" id="head1"></h1>
+    </div>
+
+    <p>Click the button/input a number to subtract 5 from the number.</p>
+
+    <p id="result1"></p>
+    
+    <form>
+        <input type="number" id="num1">
+    </form>
+
+    <button type="button" onclick="subtract()">exe</button>
+
+    <script>
+        document.getElementById("head1").innerHTML = "Basic Calculator";
+    function subtract() {
+    
+        var num1 = document.getElementById("num1").value;
+        var answer = Number(num1) - 5;
+        document.getElementById("result1").innerHTML = answer;
+        //var x = 8;
+        //var y = 9
+        //var answer = x-y;
+    }
+    </script>
+
+</body>
+</html>
